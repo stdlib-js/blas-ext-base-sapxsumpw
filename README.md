@@ -37,7 +37,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import sapxsumpw from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-sapxsumpw@esm/index.mjs';
+import sapxsumpw from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-sapxsumpw@v0.0.9-esm/index.mjs';
 ```
 
 #### sapxsumpw( N, alpha, x, stride )
@@ -150,7 +150,7 @@ var v = sapxsumpw.ndarray( N, 5.0, x, 2, 1 );
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@esm/index.mjs';
 import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@esm/index.mjs';
-import sapxsumpw from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-sapxsumpw@esm/index.mjs';
+import sapxsumpw from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-sapxsumpw@v0.0.9-esm/index.mjs';
 
 var x;
 var i;
