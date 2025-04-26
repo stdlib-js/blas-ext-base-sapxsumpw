@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-24)
+## Unreleased (2025-04-26)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`9f85b5d`](https://github.com/stdlib-js/stdlib/commit/9f85b5d90cb6fcaf052116cd06aa4a693757f0ec) - **test:** fix description _(by Philipp Burckhardt)_
 -   [`22212ac`](https://github.com/stdlib-js/stdlib/commit/22212ac4eed8f336d9798ea7c70daf0ff0f1906a) - **docs:** update related packages sections [(#5129)](https://github.com/stdlib-js/stdlib/pull/5129) _(by stdlib-bot)_
 -   [`7aa7851`](https://github.com/stdlib-js/stdlib/commit/7aa785142a77891dfa757fb0981966345a3b65f9) - **feat:** add C `ndarray` API and refactor `blas/ext/base/sapxsumpw` [(#4747)](https://github.com/stdlib-js/stdlib/pull/4747) _(by Muhammad Haris, Athan Reines)_
 -   [`62364f6`](https://github.com/stdlib-js/stdlib/commit/62364f62ea823a3b52c2ad25660ecd80c71f8f36) - **style:** fix C comment alignment _(by Philipp Burckhardt)_
