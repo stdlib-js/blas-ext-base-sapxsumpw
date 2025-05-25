@@ -1,9 +1,9 @@
-"use strict";var E=function(o,u){return function(){return u||o((u={exports:{}}).exports,u),u.exports}};var R=E(function(U,C){
-var r=require('@stdlib/number-float64-base-to-float32/dist'),Z=require('@stdlib/math-base-special-floor/dist'),b=128;function O(o,u,n,e,T){var v,i,m,c,t,y,w,a,j,B,s,q,f;if(o<=0)return 0;if(v=T,e===0)return r(o*r(u+n[v]));if(o<8){for(s=0,f=0;f<o;f++)s=r(s+r(u+n[v])),v+=e;return s}if(o<=b){for(i=r(u+n[v]),m=r(u+n[v+e]),c=r(u+n[v+2*e]),t=r(u+n[v+3*e]),y=r(u+n[v+4*e]),w=r(u+n[v+5*e]),a=r(u+n[v+6*e]),j=r(u+n[v+7*e]),v+=8*e,B=o%8,f=8;f<o-B;f+=8)i=r(i+r(u+n[v])),m=r(m+r(u+n[v+e])),c=r(c+r(u+n[v+2*e])),t=r(t+r(u+n[v+3*e])),y=r(y+r(u+n[v+4*e])),w=r(w+r(u+n[v+5*e])),a=r(a+r(u+n[v+6*e])),j=r(j+r(u+n[v+7*e])),v+=8*e;for(s=r(r(r(i+m)+r(c+t))+r(r(y+w)+r(a+j))),f;f<o;f++)s=r(s+r(u+n[v])),v+=e;return s}return q=Z(o/2),q-=q%8,r(O(q,u,n,e,v)+O(o-q,u,n,e,v+q*e))}C.exports=O
-});var I=E(function(V,F){
-var g=require('@stdlib/strided-base-stride2offset/dist'),k=R();function z(o,u,n,e){return k(o,u,n,e,g(o,e))}F.exports=z
-});var M=E(function(W,L){
-var A=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),K=I(),D=R();A(K,"ndarray",D);L.exports=K
-});var G=require("path").join,H=require('@stdlib/utils-try-require/dist'),J=require('@stdlib/assert-is-error/dist'),P=M(),_,S=H(G(__dirname,"./native.js"));J(S)?_=P:_=S;module.exports=_;
+"use strict";var i=function(r,e){return function(){return e||r((e={exports:{}}).exports,e),e.exports}};var u=i(function(k,p){
+var n=require('@stdlib/number-float64-base-to-float32/dist'),d=require('@stdlib/blas-ext-base-ssumpw/dist').ndarray;function y(r,e,s,a,c){return r<=0?0:n(n(r*e)+d(r,s,a,c))}p.exports=y
+});var q=i(function(z,v){
+var w=require('@stdlib/strided-base-stride2offset/dist'),j=u();function l(r,e,s,a){return j(r,e,s,a,w(r,a))}v.exports=l
+});var x=i(function(A,m){
+var R=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),o=q(),_=u();R(o,"ndarray",_);m.exports=o
+});var E=require("path").join,O=require('@stdlib/utils-try-require/dist'),b=require('@stdlib/assert-is-error/dist'),g=x(),t,f=O(E(__dirname,"./native.js"));b(f)?t=g:t=f;module.exports=t;
 /** @license Apache-2.0 */
 //# sourceMappingURL=index.js.map
